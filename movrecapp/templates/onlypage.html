@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html>    
+  
+  <head>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Movie Recommendation App</title>
+    <h1><center><em> Random Movie Pick </em></center></h1>
+    <h2><center><em> Picking tonight's flix ? We got your back. </em></center></h2>
+  </head>
+  
+  <style>
+    body {
+      background-image: url("{% static 'cinema.jpg' %}");
+      background-attachment: fixed;
+      background-size: cover;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-style:normal;
+      color:bisque
+    }
+  </style>
+  
+  <body>
+    <br>
+    <br>
+    <br>
+      <a href = "/mov"><button id = random class="button"><span><strong> Randomize </strong></span></button></a>
+    <br>
+    <br>
+    <br>
+  </body>
+  
+</html>

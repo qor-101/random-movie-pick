@@ -1,0 +1,58 @@
+.button {
+    border: none;
+    background-color:bisque;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition:all 0.5s;
+    transition-duration: 0.4s;
+    border-radius: 6px;
+    /* .center code */
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;        
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button:hover span {
+    padding-right: 25px;
+}
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+} 
+input[type=text], input[type=password] {
+    padding: 15px 70px;
+    width: 50%;
+    margin: 8px 16px;
+    display:inline-block;
+    border: 2px solid green;
+    box-sizing: border-box;
+    
+}
+.label {
+    font-size: 24px;
+}
