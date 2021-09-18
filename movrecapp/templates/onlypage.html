@@ -3,86 +3,13 @@
 <html>    
   
   <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
     <title>Movie Recommendation App</title> 
   </head>
-
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Gluten');
-
-.bstyle {
-    padding-top: 50px;
-    background-image: url("{% static 'cinema.jpg' %}"); 
-    background-attachment: fixed;
-    background-size: cover;
-    color:bisque;
-    width: 100%;
-    height: 100%;
-}
-
-.header{
-    font-size: 40px;
-    font-family: Gluten;
-    font-weight: normal;
-    text-align: center;
-    }
-
-.button {
-border: none;
-background-color:bisque;
-color: black;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-font-family:'Gluten';
-margin: 4px 2px;
-cursor: pointer;
-transition:all 0.5s;
-transition-duration: 0.4s;
-border-radius: 6px;
-/* .center code */
-display: block;
-margin-top: 40px;
-margin-left: auto;
-margin-right: auto;
-width: 180px;        
-}
-
-.button span {
-cursor: pointer;
-display: inline-block;
-position: relative;
-transition: 0.5s;
-}
-
-.button span:after {
-content: '\00bb';
-position: absolute;
-opacity: 0;
-top: 0;
-right: -20px;
-transition: 0.5s;
-}
-
-.button:hover {
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-.button:hover span {
-padding-right: 25px;
-}
-
-.button:hover span:after {
-opacity: 1;
-right: 0;
-} 
-
-  </style>
   
-  <body class = "bstyle">
-    <p class="header"> Random Movie Pick </p>
-    <p class="header"> Picking tonight's flix ? We got your back. </p>
+  <body class="body">
+    <p class="header">Random Movie Pick</p>
+    <p class="header">Picking tonight's flix ? We got your back</p>
     <br><br><br><br>
     <a href = "/mov"><button id = "random" class="button"><span><strong> Randomize </strong></span></button></a>
   </body>
