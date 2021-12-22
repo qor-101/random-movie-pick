@@ -41,8 +41,10 @@ defusedxml==0.7.1
 distlib==0.3.0
 distro==1.4.0
 distro-info===0.23ubuntu1
+dj-database-url==0.5.0
 Django==4.0
 django-crispy-forms==1.13.0
+django-on-heroku==1.1.2
 dnspython==1.16.0
 entrypoints==0.3
 eth-hash==0.3.1
@@ -118,6 +120,7 @@ protonvpn-cli==3.11.0
 protonvpn-gui==1.7.0
 protonvpn-nm-lib==3.7.0
 psutil==5.5.1
+psycopg2-binary==2.9.2
 ptyprocess==0.7.0
 py-ecc==5.2.0
 pycairo==1.16.2
@@ -201,6 +204,7 @@ virtualenv==20.0.17
 wadllib==1.3.3
 wcwidth==0.2.5
 webencodings==0.5.1
+whitenoise==5.3.0
 xkit==0.0.0
 youtube-dl==2021.4.26
 zeroconf==0.24.4
